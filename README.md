@@ -89,21 +89,50 @@ function handleResponse(e) {
 2. Copy the provided HTML, CSS, and JavaScript code into these files respectively.
 3. In `script.js`, replace the URL in the `fetch` function with your Google Apps Script Web App URL.
 
-## Hosting on Vercel
+## Hosting on GitHub Pages
 
-1. Sign up for a free account on [Vercel](https://vercel.com/).
-2. Install the Vercel CLI by running: `npm i -g vercel`
-3. Open a terminal in your project directory.
-4. Run `vercel login` and follow the prompts to log in.
-5. Run `vercel` in your project directory and follow the prompts to deploy your site.
-6. Vercel will provide you with a URL for your deployed site.
+1. Create a GitHub account if you don't have one already.
+2. Create a new repository on GitHub.
+3. Initialize git in your local project directory:
+   ```
+   git init
+   ```
+4. Add your files to git:
+   ```
+   git add .
+   ```
+5. Commit your files:
+   ```
+   git commit -m "Initial commit"
+   ```
+6. Link your local repository to the GitHub repository:
+   ```
+   git remote add origin https://github.com/yourusername/your-repo-name.git
+   ```
+7. Push your code to GitHub:
+   ```
+   git push -u origin main
+   ```
+8. Go to your repository on GitHub.
+9. Click on "Settings" > "Pages".
+10. Under "Source", select "main" branch and click "Save".
+11. GitHub will provide you with a URL where your site is published.
 
 ### Updating Your Site
 
 To update your site after making changes:
 
-1. Commit your changes to your local git repository.
-2. Run `vercel` again in your project directory.
+1. Make your changes locally.
+2. Commit your changes:
+   ```
+   git add .
+   git commit -m "Description of changes"
+   ```
+3. Push to GitHub:
+   ```
+   git push
+   ```
+4. GitHub Pages will automatically update your site.
 
 ## Customization
 
@@ -119,4 +148,4 @@ If you encounter issues with form submission:
 2. Verify that your Google Apps Script Web App URL is correct in `script.js`.
 3. Ensure your Google Sheet and Apps Script are set up correctly.
 
-For any other issues, refer to the Vercel documentation or seek assistance in their community forums.
+For any other issues, refer to the GitHub Pages documentation or seek assistance in their community forums.
