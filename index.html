@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Movers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="site-title">Swift Movers</h1>
+    </header>
+    <div class="image-slider">
+        <img src="./images/moving_1.jpg" alt="Moving Image 1" class="active">
+        <img src="./images/moving_2.jpg" alt="Moving Image 2">
+        <img src="./images/moving_3.jpg" alt="Moving Image 3">
+    </div>
+    <button class="cta-button" onclick="scrollToForm()">Get a Quote</button>
+    <div class="rates-container">
+        <h2>Our Rates</h2>
+        <p>First hour: $35</p>
+        <p>Every hour after: $25</p>
+    </div>
+    <div class="quote-form" id="quoteForm">
+        <h2>Request a Quote</h2>
+        <form id="submit-form">
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <input type="tel" name="Phone" placeholder="Phone Number (optional)">
+            <input type="number" name="EstimatedTime" placeholder="Estimated Time (hours)" required>
+            <textarea name="Description" placeholder="Request Description" required></textarea>
+            <button type="submit">Submit Quote Request</button>
+        </form>
+    </div>
+
+
+
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>At Swift Movers, we're more than just a moving company – we're your partners in transition. Founded in 2010
+            by John Smith and Jane Doe, our team brings over 20 years of combined experience in the moving industry.</p>
+        <p>We understand that moving can be stressful, which is why we're committed to providing efficient, reliable,
+            and friendly service. Our team of professional movers is trained to handle your belongings with the utmost
+            care and respect.</p>
+        <div class="team-member">
+            <img src="./images/headshot_1.webp" alt="John Smith">
+            <div class="member-info">
+                <h3>John Smith</h3>
+                <hr>
+                <p>John Smith, co-founder of Swift Movers, has been in the moving industry for over 15 years. His
+                    expertise in logistics and customer service has been instrumental in shaping our company's
+                    commitment to excellence.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="./images/headshot_2.webp" alt="Jane Doe">
+            <div class="member-info">
+                <h3>Jane Doe</h3>
+                <hr>
+                <p>Jane Doe, co-founder and operations manager, brings her 10 years of experience in project management
+                    to ensure every move is executed flawlessly. Her attention to detail and problem-solving skills make
+                    every relocation a smooth experience.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
