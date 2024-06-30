@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         for (const [key, value] of formData.entries()) {
             searchParams.append(key, value);
         }
-        const url = 'https://script.google.com/macros/s/AKfycbw9HpUfoPVO-7vL4-JkNhWaC1ge8wRRStSpKQ4GqvoUfp5OybGZ7tTUa3f-mcc6Ohj29Q/exec' + '?' + searchParams.toString();
+        const url = 'https://script.google.com/macros/s/AKfycbyHgoqIxtH_oli5UqHSX4JkJzd7WPHIFa6xoPJTdWBdfGRYzuHMhGuTZg9GxOImrZhH/exec' + '?' + searchParams.toString();
         fetch(url, {
             method: 'GET',
             mode: 'no-cors'
